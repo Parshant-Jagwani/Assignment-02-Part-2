@@ -117,7 +117,6 @@ database-1  | 2024-01-26 18:06:22.435 UTC [1] LOG:  listening on Unix socket "/v
 database-1  | 2024-01-26 18:06:23.041 UTC [63] LOG:  database system was shut down at 2024-01-26 18:06:20 UTC
 database-1  | 2024-01-26 18:06:23.504 UTC [1] LOG:  database system is ready to accept connections
 ```
-
 #### 5.	Modify the Docker file for the web application container to include a new feature (e.g., a new message, a new page, etc.). Rebuild the web application container and  redeploy the application using docker-compose. Verify that the new feature is working  as expected. 
 
 #### Ans:  Modified the new-feature buy giving new route in app.py, but it was also unable to run on browser code is given bellow.
@@ -140,9 +139,17 @@ docker-compose build --no-cache
 docker-compose up
 ```
 
-
 #### 6.	Implement a backup strategy for the database. This can be achieved using a Docker volume or by running a backup script periodically. 
 
+#### Ans:  For Backup, I created _Volume_ in Docker Desktop named as ```Assignment-data-backup```` and command is given bellow which created backup.
+
+```
+docker run -v Assignment-data-backup:/var/lib/postgresql/data b39e2ef5216b
+```
+#### ```-v``` represted the volume tag, ```Assignment-data-backup``` is _volume-Name_  , ```/var/lib/postgresql/data``` is directory from which database's backup will be maintained, and finally ```b39e2ef5216b``` Database's Container-ID
+
+
+### Task 7,8, 9 Unable to Perform.
 
 #### 7.	Implement a scaling strategy for the web application. This can be achieved by using the docker-compose scale command to create multiple instances of the web service. Verify that the web application is accessible and working correctly when scaled.
 
@@ -154,3 +161,4 @@ docker-compose up
 
 
 #### 10.	Push the codebase for the sample application to your GitHub repository (create a new one for this part)
+
