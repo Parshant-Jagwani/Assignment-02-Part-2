@@ -162,3 +162,51 @@ docker run -v Assignment-data-backup:/var/lib/postgresql/data b39e2ef5216b
 
 #### 10.	Push the codebase for the sample application to your GitHub repository (create a new one for this part)
 
+#### For initializing the Git, Adding the Git in project and maintaining the comment  used following commands  and made a project in GitHub Named as ```Assignment-02-Part-2```
+
+#### CMDs
+```
+git init
+git add .
+git commit -m "Creating Assignment-02-Part-2 Git Repo"
+```
+
+#### Output
+```
+PS C:\Users\parsh\OneDrive\Desktop\Devops Training\Docker-Compose\Assignment-02-Part2> git init
+Initialized empty Git repository in C:/Users/parsh/OneDrive/Desktop/Devops Training/Docker-Compose/Assignment-02-Part2/.git/
+PS C:\Users\parsh\OneDrive\Desktop\Devops Training\Docker-Compose\Assignment-02-Part2> git add .
+PS C:\Users\parsh\OneDrive\Desktop\Devops Training\Docker-Compose\Assignment-02-Part2> git add .
+PS C:\Users\parsh\OneDrive\Desktop\Devops Training\Docker-Compose\Assignment-02-Part2>  git commit -m "Creating Assignment-02-Part-2 Git Repo"
+[master (root-commit) 569b375] Creating Assignment-02-Part-2 Git Repo
+ 4 files changed, 85 insertions(+)
+ create mode 100644 Dockerfile
+ create mode 100644 app.py
+ create mode 100644 docker-compose.yml
+ create mode 100644 requirements.txt
+```
+
+####  For staging and pushing the code in [Assignment-02-Part-2](https://github.com/Parshant-Jagwani/Assignment-02-Part-2/tree/master)
+```
+git remote add origin https://github.com/Parshant-Jagwani/Assignment-02-Part-2
+git push --set-upstream origin master
+```
+
+#### Output
+```
+PS C:\Users\parsh\OneDrive\Desktop\Devops Training\Docker-Compose\Assignment-02-Part2> git remote add origin https://github.com/Parshant-Jagwani/Assignment-02-Part-2
+PS C:\Users\parsh\OneDrive\Desktop\Devops Training\Docker-Compose\Assignment-02-Part2> git push --set-upstream origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.37 KiB | 1.37 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Parshant-Jagwani/Assignment-02-Part-2/pull/new/master
+remote:
+To https://github.com/Parshant-Jagwani/Assignment-02-Part-2
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+```
