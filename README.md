@@ -187,6 +187,8 @@ PS C:\Users\parsh\OneDrive\Desktop\Devops Training\Docker-Compose\Assignment-02-
 ```
 
 ####  For staging and pushing the code in [Assignment-02-Part-2](https://github.com/Parshant-Jagwani/Assignment-02-Part-2/tree/master)
+
+#### CMDs
 ```
 git remote add origin https://github.com/Parshant-Jagwani/Assignment-02-Part-2
 git push --set-upstream origin master
